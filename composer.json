@@ -1,0 +1,28 @@
+{
+    "name": "borisba/newtopic",
+    "type": "phpbb-extension",
+    "description": "Add button New Topic",
+    "homepage": "http://www.borisba.com",
+    "version": "0.0.1",
+    "time": "2014-10-31",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "BorisBA",
+            "homepage": "http://www.borisba.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "phpbb/epv": "dev-master"
+    },
+    "extra": {
+        "display-name": "New Topic",
+        "soft-require": {
+		    "phpbb/phpbb": "3.1.*@dev"
+        }
+    }
+}

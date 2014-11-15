@@ -33,8 +33,9 @@ class v_0_0_1 extends \phpbb\db\migration\migration
 			array('config.add', array('custom_notice_url_class', '')),*/
 
 			// Current version
-			/*array('config.add', array('newtopic_version', '0.0.1')),
+			array('config.add', array('newtopic_version', '0.0.1')),
 
+			/*
 			// Add ACP modules
 			array('module.add', array('acp', 'ACP_CAT_DOT_MODS', 'ACP_BOARD_NEWTOPIC')),
 			array('module.add', array('acp', 'ACP_BOARD_NEWTOPIC', array(

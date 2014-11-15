@@ -33,7 +33,7 @@ class v_0_0_1 extends \phpbb\db\migration\migration
 			array('config.add', array('custom_notice_url_class', '')),*/
 
 			// Current version
-			array('config.add', array('newtopic_version', '0.1.1')),
+			/*array('config.add', array('newtopic_version', '0.0.1')),
 
 			// Add ACP modules
 			array('module.add', array('acp', 'ACP_CAT_DOT_MODS', 'ACP_BOARD_NEWTOPIC')),
@@ -41,15 +41,15 @@ class v_0_0_1 extends \phpbb\db\migration\migration
 					'module_basename'	=> '\borisba\newtopic\acp\newtopic_module',
 					'module_langname'	=> 'ACP_NEWTOPIC_EXPLAIN',
 					'module_mode'		=> 'config_newtopic',
-					'module_auth'		=> 'ext_borisba/newtopic && acl_a_newtopice',
-			))),
+					'module_auth'		=> 'ext_borisba/newtopic && acl_a_newtopic',
+			))),*/
 
 			// Add permissions
 			array('permission.add', array('a_newtopic', true)),
 			array('permission.add', array('f_not_change_subject', false)),
 
 			// Set permissions
-			array('permission.permission_set', array('ROLE_ADMIN_FULL', 'a_unewtopic')),
+			array('permission.permission_set', array('ROLE_ADMIN_FULL', 'a_newtopic')),
 			array('permission.permission_set', array('ROLE_ADMIN_STANDARD', 'a_newtopic')),
 			array('permission.permission_set', array('ROLE_FORUM_FULL', 'f_not_change_subject')),
 		);

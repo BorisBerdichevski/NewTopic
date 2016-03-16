@@ -100,6 +100,7 @@ class listener implements EventSubscriberInterface
 		return array(
 			'core.user_setup'					=>	'load_language_on_setup',
 			'core.page_header_after'			=>	'viewtopic_modify_data',
+			'core.permissions'					=>	'add_permission',
 		);
 	}
 	/**
@@ -129,6 +130,21 @@ class listener implements EventSubscriberInterface
 	public function viewtopic_modify_data($event)
 	{
 	
+	}
+	
+	/**
+	 * Add permissions
+	 *
+	 * @param object $event The event object
+	 * @return null
+	 * @access public
+	 */
+	public function add_permission($event)
+	{
+		$permissions = $event['permissions'];
+		$permissions['a_newtopic'] = array('lang' => 'ACL_A_NEWTOPIC', 'cat' => 'misc');
+		$permissions['f_not_change_subject'] = array('lang' => 'ACL_F_NOT_CHANGE_SUBJECT', 'cat' => 'misc');
+		$event['permissions'] = $permissions;
 	}
 
 }

@@ -27,6 +27,6 @@ $lang = array_merge($lang, array(
 	'ACP_BOARD_NEWTOPIC'			=> 'Вставка кнопки New Topic',
 	'ACP_NEWTOPIC_EXPLAIN'		    => 'Вставка кнопки New Topic',
 
-	'ACL_A_NEWTOPIC'			=> 'Может изменять настройки',
+	'ACL_A_NEWTOPIC'			=> 'Может изменять настройки New Topic',
 	'ACL_F_NOT_CHANGE_SUBJECT'	=> 'Может изменять заголовок',
 ));
